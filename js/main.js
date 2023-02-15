@@ -158,7 +158,8 @@ num1 % 2 === 0 ? console.log(true) : console.log(false);
 
 var num2 = 2;
 
-num1 > num2 ? console.log(num1) : console.log(num2);
+num1 > num2 ? console.log(num1) : 
+    num1 === num2 ? console.log('They are equal') : console.log(num2);
 
 // תרגיל 10
 
