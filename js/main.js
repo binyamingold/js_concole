@@ -225,18 +225,18 @@ else if ((age >=18 && age <= 30) && ( run <= 25)){
 // ביום השעות 12 בצהרים עד 17 (כולל) יודפס לי "צהרים טובים"
 // בין השעות 18:00 ל 23 יודפס לי "ערב טוב".
 
-var hour = 5;
+var hour = 18;
 
 if (typeof(hour) == 'string'){
     hour = +(hour);
 }
-if (hour >= 5 || hour <= 11){
+if (hour >= 5 && hour <= 11){
     console.log("Good Morning")
 }
-else if (day >= 12 || day <= 17){
+else if (hour >= 12 && hour <= 17){
     console.log("good afternoon")
 }
-else if (day >= 18 || day <= 23){
+else if (hour >= 18 && hour <= 23){
     console.log("good evening")
 }
 else{
